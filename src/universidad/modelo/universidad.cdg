@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="universidad">
+  <ClassDiagramComponents>
+    <Class name="Materia" package="" visibility="public" xPosition="136.0" yPosition="259.0">
+      <Fields>
+        <Field name="id_materia" type="int" visibility="private"/>
+        <Field name="nombre_materia" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Alumno" package="" visibility="public" xPosition="555.0" yPosition="259.0">
+      <Fields>
+        <Field name="id_alumno" type="int" visibility="private"/>
+        <Field name="nombre_alumno" type="String" visibility="private"/>
+        <Field name="legajo" type="int" visibility="private"/>
+        <Field name="activo" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cursada" package="" visibility="public" xPosition="349.0" yPosition="71.0">
+      <Fields>
+        <Field name="id_cursada" type="int" visibility="private"/>
+        <Field name="nota" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="Cursada" target="Alumno" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="tiene" source="Cursada" target="Materia" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
